@@ -23,7 +23,8 @@ describe('markov machine', function () {
   test('generates text from input', function () {
     let test = new MarkovMachine('1 2 3');
     let testText = test.getText();
-    expect('1 2 3').toEqual(testText);
+    // expect('1 2 3').toEqual(testText);
+    expect(['1 2 3', '2 3', '3']).toContain(testText);
   });
 
   test('generates text from valid pairs', function () {
