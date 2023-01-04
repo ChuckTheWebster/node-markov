@@ -68,6 +68,6 @@ class MarkovMachine {
 
 }
 
-
-const catInHatMachine = new MarkovMachine("the cat in the hat");
-console.log(catInHatMachine.getText());
+module.exports = {
+  MarkovMachine,
+};
